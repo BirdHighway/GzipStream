@@ -27,5 +27,5 @@ node server.js
 In another terminal, run the client, specifying the source file to read from and the name you want the server to save it as.
 
 ```
-node client.js sourceFile.txt destinationFile.txt
+node client.js package-lock.json destinationFile.txt
 ```
