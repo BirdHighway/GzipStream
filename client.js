@@ -16,7 +16,7 @@ axios.default({
   headers: {
     'Content-Type': 'application/octet-stream',
     'Content-Encoding': 'gzip',
-    fileName: destinationFile
+    'x-file-name': destinationFile
   },
   data: zippedStream
 }).then((response) => {

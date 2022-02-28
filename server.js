@@ -5,7 +5,7 @@ import { createWriteStream } from 'fs';
 
 createServer((req, res) => {
   console.log('request received');
-  const fileName = req.headers['fileName'] || 'data.txt';
+  const fileName = req.headers['x-file-name'] || 'data.txt';
   const writeStream = createWriteStream(fileName);
   // request is a stream
   req
